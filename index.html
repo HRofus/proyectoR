@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuego</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+        <a class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="menu">
+            <a href="#ini">Inicio</a>
+            <a href="#tra">Tráiler</a>
+            <a href="#gale">Personajes</a>
+            <a href="#con">Contactos</a>
+        </div>
+    </nav>
+    <header></header>
+    <a name="ini"></a>
+    <h2>Inicio</h2>
+    <p>Crash Bandicoot es el nombre de una serie de videojuegos protagonizado por el personaje del mismo nombre. Fue
+        creada en 1996 por Naughty Dog, quien desarrolló los primeros cuatro títulos, bajo la distribución de Universal
+        Interactive Studios. Los tres primeros juegos pertenecen al género de plataformas, sin embargo, con el tiempo se
+        fue diversificando a otros géneros. La serie ha vendido más de 50 millones de copias en todo el mundo.</p>
+    <a name="tra"></a>
+    <h2>Tráiler</h2>
+    <iframe class="vid" width="100%" height="300" src="https://www.youtube.com/embed/1Uai4Rd2wqY"
+        title="Crash Bandicoot N. Sane Trilogy - Tráiler de lanzamiento" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <a name="gale"></a>
+    <h2>Personajes</h2>
+    <p>
+            La saga de Crash Bandicoot presenta una enorme cantidad de personajes, icluyendo al protagonista. Sin embargo el número de villanos es superior que al de aliados de nuestro marsupial.
+            Por lo tanto a continuación preasentaremos a una parte del grupo de villanos a los que Crash tendrá que enfrentar durante su aventura para poder avanzar en su exrtenso camino.
+    </p>
+    <div class="conten">
+        <figure>
+            <div class="im"><img class="per" src="img/crash.png" alt=""></div>
+            <figcaption>Crash</figcaption>
+        </figure>
+        <figure>
+            <div class="im"><img class="per" src="img/cortex.png" alt=""></div>
+            <figcaption>Dr. Neo Cortex</figcaption>
+        </figure>
+        <figure>
+            <div class="im"><img class="per" src="img/brio.png" alt=""></div>
+            <figcaption>Dr. N Brio</figcaption>
+        </figure>
+        <figure>
+            <div class="im"><img class="per" src="img/gin.png" alt=""></div>
+            <figcaption>Dr. N Gin</figcaption>
+        </figure>
+        <figure>
+            <div class="im"><img class="per" src="img/riper.png" alt=""></div>
+            <figcaption>Ripper Roo</figcaption>
+        </figure>
+        <figure>
+            <div class="im"><img class="per" src="img/tropy.png" alt=""></div>
+            <figcaption>Dr. Nefarius Tropy</figcaption>
+        </figure>
+
+    </div>
+
+    <a name="con"></a>
+    <h2>Contáctate con nosotros</h2>
+    <section>
+        <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nombre de usuario</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" placeholder="¿Cómo quieres ser conocido?" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label>Correo</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" placeholder="Tu correo" />
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Déjanos un comentario</label>
+                </div>
+                <div class="col-75">
+                  <textarea
+                    placeholder="Comenta aqui :3"
+                    style="height: 50px"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                    <label for="">¿En qué consola juegas?</label>
+                </div>
+                <div class="col-75">
+                    <select name="" id="">
+                        <option value="">PC</option>
+                        <option value="">Playstation 4</option>
+                        <option value="">XBOX ONE</option>
+                        <option value="">Nintendo Switch</option>
+                        <option value="">Playstation 5</option>
+                        <option value="">XBOX Series X</option>
+                    </select>
+                </div>
+              </div><br>
+              
+              <div class="row">
+                <input class="bot" type="submit" value="Comenzar">
+              </div>
+        </form>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(".btn").on("click", function () {
+            $('.menu').toggleClass("show");
+        });
+    </script>
+        <footer>
+            <div class="lo">
+           <a target="_blank" href="https://facebook.com/CrashBandicoot/" > <i class="fa-brands fa-facebook fa-fade" style="color: #5895fd;"></i></a>  
+            <a target="_blank" href="https://www.instagram.com/crashbandicoot/"><i class="fa-brands fa-instagram fa-beat" style="color: #b80aa1;"></i></a>
+            <a target="_blank" href="https://twitter.com/CrashBandicoot?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter fa-beat" style="color: #03b5d8;"></i></a>
+            <a target="_blank" href="https://www.youtube.com/c/crashbandicoot"><i class="fa-brands fa-youtube fa-beat" style="color: #e20808;"></i></a>
+            </div>
+            <p class="pi">
+                 Página hecha por Rafael Bilbao Mallea
+            </p>
+        </footer>
+</body>
+
+</html>
